@@ -1,55 +1,45 @@
 @import "tailwindcss";
 
 @theme {
-  --color-neutral-950: #14120b;
-  --color-neutral-900: #1c1910;
-  --color-neutral-800: #292417;
-  --color-neutral-700: #3d3623;
-  --color-neutral-600: #574c31;
-  --color-neutral-500: #756743;
-  --color-neutral-400: #9e8e63;
-  --color-neutral-300: #c2b593;
-  --color-neutral-200: #e0d7c1;
-  --color-neutral-100: #f2efe6;
-  --color-neutral-50:  #faf9f5;
-  --font-sans: var(--font-lato);
+  /* ========== BACKGROUND ========== */
+  --color-bg: #14120b;
+  --color-surface: #1c1910;
 
-  /* New Theme Colors */
-  --color-red-500: #fb2c36;
-  --color-red-600: #e40014;
-  --color-green-50: #f0fdf4;
-  --color-green-500: #00c758;
-  --color-green-600: #00a544;
-  --color-green-800: #016630;
-  --color-green-900: #0d542b;
-  --color-blue-50: #eff6ff;
-  --color-blue-600: #155dfc;
-  --color-blue-800: #193cb8;
-  --color-blue-900: #1c398e;
-  --color-purple-400: #c07eff;
-  --color-gray-50: #f9fafb;
-  --color-gray-200: #e5e7eb;
-  --color-gray-300: #d1d5dc;
-  --color-gray-500: #6a7282;
-  --color-gray-600: #4a5565;
-  --color-gray-700: #364153;
-  --color-gray-800: #1e2939;
-  --color-gray-900: #101828;
-  --color-black: #000;
-  --color-white: #fff; 
-  --color-theme-bg: #14120b;
-  --color-theme-fg: #edecec;
-  --color-theme-fg-02: #d7d6d5;
-  --color-theme-card-hex: #1b1913;
-  --color-theme-card-rgb: 27 29 39;
-  --color-theme-card-01-hex: #1d1b15;
-  --color-theme-card-02-hex: #201e18;
-  --color-theme-card-03-hex: #26241e;
-  --color-theme-card-04-hex: #2b2923;
-  --color-theme-card-hover-hex: #201e18;
-  --color-theme-card-hover-light-hex: #1d1b15;
-  --color-theme-card-warm-hex: #1c1713; 
-  --color-theme-product-text: #26251eeb;
+  /* ========== TEXT ========== */
+  --color-text-primary: #edecec;
+  --color-text-secondary: #d7d6d5;
+  --color-text-muted: #9e8e63;
+  --color-text-soft: #c2b593;
+  --color-text-disabled: #756743;
+
+  /* ========== BORDER ========== */
+  --color-border-strong: #3d3623;
+  --color-border-default: #292417;
+  --color-border-soft: #574c31;
+
+  /* ========== CARD SYSTEM ========== */
+  --color-card: #1b1913;
+  --color-card-soft: #1d1b15;
+  --color-card-muted: #201e18;
+  --color-card-elevated: #26241e;
+  --color-card-strong: #2b2923;
+
+  /* Hover states */
+  --color-card-hover: #201e18;
+  --color-card-hover-soft: #1d1b15;
+
+  /* Special use */
+  --color-card-warm: #1c1713;
+
+  /* ========== EXTRA UI ========== */
+  --color-overlay-light: #f2efe6;
+  --color-overlay-soft: #e0d7c1;
+  --color-overlay-subtle: #faf9f5;
+
+  /* Product specific */
+  --color-text-product: #26251eeb;
+  --color-accent: #f59e0b;
+  --font-sans: var(--font-lato);
 }
 
 body {
@@ -61,8 +51,4 @@ body {
 ::selection {
   background: #f59e0b; /* amber-500 */
   color: #14120b;
-}
-
-* {
-  border-color: var(--color-neutral-800);
 }
